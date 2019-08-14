@@ -1,20 +1,15 @@
-#bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  /* Preserve aspet ratio */
-  min-width: 100%;
-  min-height: 100%;
-}
 
 .back{
   position: fixed;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  background:url(../images/LOROrs.png) no-repeat top center #efeff1;
+  background-size:contain;
+
 }
+
 
 .thx{
   position: fixed;
@@ -25,7 +20,7 @@
 nav{
   width: 100%;
   position: fixed;
-  top:50px;
+  top:30px;
   text-align:center;
 }
 nav a{
