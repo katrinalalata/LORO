@@ -1,15 +1,34 @@
+html {
+  background: url(../images/LOROBG.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
+h1 {
+  font-family: 'Righteous', cursive;
+  font-size: 300px;
+  letter-spacing: 10px;
+  color: #ffffff;
+}
+
+h2 {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 150px;
+  letter-spacing: 10px;
+  color: #FFB800;
+}
 .back{
   position: fixed;
   left: 0;
   top: 0;
   min-height: 100%;
   min-width: 100%;
-  background:url(../images/LOROrs.png) no-repeat top center #efeff1;
-  background-size:contain;
+/*  background:url(../images/LOROBG.png) no-repeat top center #efeff1;
+  background-size:cover;*/
 
 }
-
 
 .thx{
   position: fixed;
@@ -17,12 +36,14 @@
   transform:translateX(-50%);
   bottom: 15px;
 }
+
 nav{
   width: 100%;
   position: fixed;
   top:30px;
   text-align:center;
 }
+
 nav a{
   font-family: 'Noto Sans', sans-serif;
   font-weight:500;
@@ -35,6 +56,7 @@ nav a{
   position:relative;
   display:inline-block;
 }
+
 nav a:before{
   content:'';
   position: absolute;
@@ -87,4 +109,87 @@ nav a:hover:before{
   nav a:nth-child(#{$i}){
     animation:show .2s #{$i*0.1+1}s ease 1 both;
   }
+}
+
+/* content */
+.container {
+  position: absolute;
+  top: 700px;
+  left: 100px;
+}
+
+/* display */
+section.view {
+  height: 100vh;
+  padding: 0px;
+}
+
+.title {
+  position: fixed;
+  left: 320px;
+  top: 230px;
+  width: 1000px;
+}
+
+.release {
+  position: relative;
+  top: 0px;
+  left: 150px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+
+#dashboard_mirror_cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(255, 214, 107, 0.6);
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+#dashboard_hide_screen {
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+  display: none;
+}
+
+#dashboard_hide_screen:target,
+#dashboard_hide_screen:target + #dashboard_mirror_cover {
+  display: block;
+  opacity: 2;
+}
+
+.cancel {
+  display: block;
+  position: absolute;
+  top: 3px;
+  right: 2px;
+  background: rgb(245, 245, 245);
+  color: black;
+  height: 30px;
+  width: 35px;
+  font-size: 30px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+.about {
+  position: relative;
+  top: 200px;
+  font-weight: 700;
+  width: 700px;
+  color: #000000;
+  font-family:
+  /*background-color: #ffffff;*/
+  padding: 50px;
+  margin: 0 auto;
+  font-family: 'Noto Sans', sans-serif;
 }
